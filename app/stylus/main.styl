@@ -1,0 +1,191 @@
+body
+  height 20000px
+
+$name = 'i4j5-'
+
+.{$name}
+
+  &callme
+    box-sizing border-box
+    display block
+    right 5%
+    bottom 15%
+    position fixed
+    z-index 11000
+    background #FFF
+    border-radius: 30px
+    width 55px
+    height 55px
+    box-shadow 0 0 15px rgba(0, 0, 0, .3)
+    transform-style preserve-3d;
+    
+    &-bg
+      position fixed
+      width 100%
+      height 100%
+      background-color rgba(0,0,0,0)
+      top 0
+      left 0
+      z-index 10000
+      display none
+      
+      &_active
+        display block
+    
+    
+    &__icon 
+      width 55px
+      height 55px 
+      background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADhklEQVRoQ82aS1LbQBCGu4VCFl6EnCCwTGJX4AQxy1RKBN8AnyDexLADdthZACeIcwIclFSWOCfAFCZZ4tyAVOGFQVKnZozAwnrNjOyRtprXp/57uqdHCDFP3f69juB9BIAyAHQIjMOm9aod10fXOwybuHZ0ufB0brAPCBuP3yPQ6p5V6uhacNS8EyAMYt4cnCDAcmgngv7QLawcVJau8gQTAPn042LZcOkIEBYTFnnYsIq1XIIwCHS9E0RcSLPAvEmMW2Tr559F79Y5TQvBQXMmMQ5St3unkT4Rb57cSAzr9vkOAm6nkVNYm7xIDDePe5cpnDuaMycSw027R7LWGOunXWJYPz7vIOJbVRjdEmPSagPCB1UQtos11opLyuNIDoD1770aEuxL9g90Q3Nuae/dy34WY4mOgSyGkONeinYMa9+wiqG5WxZjJ43BJ960e10AeJPUOO49Ef1qrpVYlqzlGQXEDOSl3dkZCE/bzes+AD6T+Zy6rcHWfK9plQjvGbjy+f1rJk9tzz2IrFUI4GvTKk4cwGZNFNhlZKwydArP83DImtgu63avjwAv0n5RAtptWqWdtO2n1W4CZMs+LxPgiciEunesgLOPL1w0bSGiK5ozVnU6fGQVZd4cdMUkBt0bp7Cqy18iUwpeiPDoVERiBPpgYnMjmV1MF0xikifqL8yCBNRuWqWKiDVV2yaCjALlgFUWxZJKglZjrVhVXWDa/okgbKBRqu90JXKxztApVGaxAaQCYTAj5/c6ojCz8pnUIDzdH1Xnj9Ka228nCsPkLGpFIRAus+OLDUL6IgNDBlajguajKwxeyUSkatrKvzCIEgzRlYFQGV/cXUrECoShp0siOLhxC7tJFpICUYEZWZJqaJrf6NbdDruDmbB2CutIg3CfyeCILCLROOsogahbRgTjrm2EdZRBtMAwcT7ynUxAdMGM72yZgTzEGbclGjQlBBbogoTVTEFUMgAVGBZwMwd5yM1cdh8vlmgq0EwFhK3n7q6+lUmlPwGQFQinBuLPLXM4EzUMgVGZOojvN+hRW6QGkBbGLxDOBGSKUjtrWEX+h8bMQPwvzJJED7CVgXXOhk6h7CeTMwcJ+g7U5GIO/fMMozx+JNAG4stt3ryuIYgATUJokVaYE/M/kp4MNpD4b1VxsScgp/GxtFokDIr/F+O66+hBmYAW2NU5AfwFoFZcsfw/ho+8dB1+q9sAAAAASUVORK5CYII=')
+      background-size 30px
+      background-position center
+      background-repeat no-repeat
+      background-color #fff
+      cursor pointer
+      border-radius 50%
+      animation i4j5-callme__icon 5s both ease-in-out infinite
+      
+    
+    &:before, &:after
+      content ''
+      width 55px
+      height 55px
+      position absolute
+      display block
+      top 0
+      left 0
+      z-index -1
+      border-radius 50%
+      background-clip padding-box
+      
+    &:before 
+      animation i4j5-callme__before 3s both ease-in-out infinite
+      
+    &:after 
+      animation i4j5-callme__after 3s both ease-in-out infinite
+    
+
+    $placeholde = #545454 
+     
+    &__input
+      height 30px
+      width 180px
+      padding 0 8px
+      display inline-block
+      box-sizing border-box
+      border 1px solid rgba(0,0,0,0.18)
+      box-shadow inset 0px 1px 1px rgba(0, 0, 0, .07)
+      background-color #fff
+      border-radius 3px/4px
+      margin 0
+      font-size 13px
+      color #313131
+      outline none
+      float left
+  
+      &::-moz-input-placeholde
+        color $placeholde
+      &::-webkit-input-placeholde
+        color $placeholde
+      ::-webkit-input-placeholder
+        color $placeholde
+      &::-input-placeholde
+         color $placeholde
+         
+    &__form
+      margin 0 auto
+      display table
+      margin-top 15px
+      
+    &__title
+      margin-top 10px
+      color #313131
+      font-size 14px
+      
+    &__btn
+      display inline-block
+      padding 0 8px
+      margin 0
+      font-size 13px
+      line-height 30px
+      color #fff
+      background-color #77B3D4
+      border-radius 3px/4px
+      float left
+      margin-left 5px
+      cursor pointer
+
+    &__modal
+      box-sizing border-box
+      width 300px 
+      height 100px
+      background-color #f5f5f5
+      position relative
+      display block
+      top -125px
+      left -335px
+      border-radius 2px
+      opacity 0
+      transition all .4s linear
+      padding 10px
+      font-size 14px
+      text-align center
+      font-family arial
+      z-index 11000
+      
+     
+      &:after
+        content ''
+        width 20px
+        height 20px
+        position absolute
+        display block
+        bottom 0px
+        right -20px
+        border-width 0px 20px 20px 0px
+        border-style solid
+        border-color rgba(0,0,0,0)
+        border-bottom-color #f5f5f5
+        z-index -1
+        
+      &_active
+        opacity 1
+
+
+@keyframes {$name}callme__icon
+  0%
+    transform rotate(0deg)
+  5%
+    transform rotate(60deg)
+  10%
+    transform rotate(30deg)
+    background-size 40px
+  15%
+    transform rotate(50deg)
+    background-size 40px
+  20%
+    transform rotate(30deg)
+    background-size 40px
+  25%
+    transform rotate(50deg)
+  32%
+    transform rotate(0deg)
+    background-size 30px
+  100%
+    transform rotate(0deg)
+
+@keyframes {$name}callme__before
+  0%
+    box-shadow 0px 0px 0px 0 #77B3D4
+  30%
+    box-shadow 0px 0px 0px 15px rgba(119, 179, 212, 0.1)
+  100%
+    box-shadow 0px 0px 0px 0 #77B3D4
+
+@keyframes {$name}callme__after
+  0%
+    box-shadow 0px 0px 0px 0 #77B3D4
+  70%
+    box-shadow 0px 0px 0px 15px rgba(119, 179, 212, 0.1)
+  100%
+    box-shadow 0px 0px 0px 0 #77B3D4

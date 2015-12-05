@@ -1,0 +1,11 @@
+{
+  "name": "i4j5/callme",
+  "authors": [
+    "Aleksandr Sazhin <i4j5@ya.ru>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "dependencies": {
+    "load": "~1.1.4"
+  }
+}
