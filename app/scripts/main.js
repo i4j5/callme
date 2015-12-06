@@ -36,7 +36,9 @@
 
       }); // click .i4j5-callme-bg
 
-    });
-  }
+    }); // onload()
+  
+  } // init()
 
 })();
+

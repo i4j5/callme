@@ -3,7 +3,7 @@ body
 
 $name = 'i4j5-'
 
-.{$name}
+.{$name}  
 
   &callme
     box-sizing border-box
@@ -14,8 +14,8 @@ $name = 'i4j5-'
     z-index 11000
     background #FFF
     border-radius: 30px
-    width 55px
-    height 55px
+    width 56px
+    height 56px
     box-shadow 0 0 15px rgba(0, 0, 0, .3)
     transform-style preserve-3d;
     
@@ -34,22 +34,30 @@ $name = 'i4j5-'
     
     
     &__icon 
-      width 55px
-      height 55px 
-      background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADhklEQVRoQ82aS1LbQBCGu4VCFl6EnCCwTGJX4AQxy1RKBN8AnyDexLADdthZACeIcwIclFSWOCfAFCZZ4tyAVOGFQVKnZozAwnrNjOyRtprXp/57uqdHCDFP3f69juB9BIAyAHQIjMOm9aod10fXOwybuHZ0ufB0brAPCBuP3yPQ6p5V6uhacNS8EyAMYt4cnCDAcmgngv7QLawcVJau8gQTAPn042LZcOkIEBYTFnnYsIq1XIIwCHS9E0RcSLPAvEmMW2Tr559F79Y5TQvBQXMmMQ5St3unkT4Rb57cSAzr9vkOAm6nkVNYm7xIDDePe5cpnDuaMycSw027R7LWGOunXWJYPz7vIOJbVRjdEmPSagPCB1UQtos11opLyuNIDoD1770aEuxL9g90Q3Nuae/dy34WY4mOgSyGkONeinYMa9+wiqG5WxZjJ43BJ960e10AeJPUOO49Ef1qrpVYlqzlGQXEDOSl3dkZCE/bzes+AD6T+Zy6rcHWfK9plQjvGbjy+f1rJk9tzz2IrFUI4GvTKk4cwGZNFNhlZKwydArP83DImtgu63avjwAv0n5RAtptWqWdtO2n1W4CZMs+LxPgiciEunesgLOPL1w0bSGiK5ozVnU6fGQVZd4cdMUkBt0bp7Cqy18iUwpeiPDoVERiBPpgYnMjmV1MF0xikifqL8yCBNRuWqWKiDVV2yaCjALlgFUWxZJKglZjrVhVXWDa/okgbKBRqu90JXKxztApVGaxAaQCYTAj5/c6ojCz8pnUIDzdH1Xnj9Ka228nCsPkLGpFIRAus+OLDUL6IgNDBlajguajKwxeyUSkatrKvzCIEgzRlYFQGV/cXUrECoShp0siOLhxC7tJFpICUYEZWZJqaJrf6NbdDruDmbB2CutIg3CfyeCILCLROOsogahbRgTjrm2EdZRBtMAwcT7ynUxAdMGM72yZgTzEGbclGjQlBBbogoTVTEFUMgAVGBZwMwd5yM1cdh8vlmgq0EwFhK3n7q6+lUmlPwGQFQinBuLPLXM4EzUMgVGZOojvN+hRW6QGkBbGLxDOBGSKUjtrWEX+h8bMQPwvzJJED7CVgXXOhk6h7CeTMwcJ+g7U5GIO/fMMozx+JNAG4stt3ryuIYgATUJokVaYE/M/kp4MNpD4b1VxsScgp/GxtFokDIr/F+O66+hBmYAW2NU5AfwFoFZcsfw/ho+8dB1+q9sAAAAASUVORK5CYII=')
-      background-size 30px
-      background-position center
-      background-repeat no-repeat
+      width 56px
+      height 56px
+      // background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADhklEQVRoQ82aS1LbQBCGu4VCFl6EnCCwTGJX4AQxy1RKBN8AnyDexLADdthZACeIcwIclFSWOCfAFCZZ4tyAVOGFQVKnZozAwnrNjOyRtprXp/57uqdHCDFP3f69juB9BIAyAHQIjMOm9aod10fXOwybuHZ0ufB0brAPCBuP3yPQ6p5V6uhacNS8EyAMYt4cnCDAcmgngv7QLawcVJau8gQTAPn042LZcOkIEBYTFnnYsIq1XIIwCHS9E0RcSLPAvEmMW2Tr559F79Y5TQvBQXMmMQ5St3unkT4Rb57cSAzr9vkOAm6nkVNYm7xIDDePe5cpnDuaMycSw027R7LWGOunXWJYPz7vIOJbVRjdEmPSagPCB1UQtos11opLyuNIDoD1770aEuxL9g90Q3Nuae/dy34WY4mOgSyGkONeinYMa9+wiqG5WxZjJ43BJ960e10AeJPUOO49Ef1qrpVYlqzlGQXEDOSl3dkZCE/bzes+AD6T+Zy6rcHWfK9plQjvGbjy+f1rJk9tzz2IrFUI4GvTKk4cwGZNFNhlZKwydArP83DImtgu63avjwAv0n5RAtptWqWdtO2n1W4CZMs+LxPgiciEunesgLOPL1w0bSGiK5ozVnU6fGQVZd4cdMUkBt0bp7Cqy18iUwpeiPDoVERiBPpgYnMjmV1MF0xikifqL8yCBNRuWqWKiDVV2yaCjALlgFUWxZJKglZjrVhVXWDa/okgbKBRqu90JXKxztApVGaxAaQCYTAj5/c6ojCz8pnUIDzdH1Xnj9Ka228nCsPkLGpFIRAus+OLDUL6IgNDBlajguajKwxeyUSkatrKvzCIEgzRlYFQGV/cXUrECoShp0siOLhxC7tJFpICUYEZWZJqaJrf6NbdDruDmbB2CutIg3CfyeCILCLROOsogahbRgTjrm2EdZRBtMAwcT7ynUxAdMGM72yZgTzEGbclGjQlBBbogoTVTEFUMgAVGBZwMwd5yM1cdh8vlmgq0EwFhK3n7q6+lUmlPwGQFQinBuLPLXM4EzUMgVGZOojvN+hRW6QGkBbGLxDOBGSKUjtrWEX+h8bMQPwvzJJED7CVgXXOhk6h7CeTMwcJ+g7U5GIO/fMMozx+JNAG4stt3ryuIYgATUJokVaYE/M/kp4MNpD4b1VxsScgp/GxtFokDIr/F+O66+hBmYAW2NU5AfwFoFZcsfw/ho+8dB1+q9sAAAAASUVORK5CYII=')
+      // background-size 30px
+      // background-position center
+      // background-repeat no-repeat
       background-color #fff
       cursor pointer
       border-radius 50%
       animation i4j5-callme__icon 5s both ease-in-out infinite
+    
+    &__phone
+      position: relative;
+      top 50%
+      left 50%
+      fill #77b3d4
+      margin-top -15px
+      margin-left -15px
       
     
     &:before, &:after
       content ''
-      width 55px
-      height 55px
+      width 56px
+      height 56px
       position absolute
       display block
       top 0
