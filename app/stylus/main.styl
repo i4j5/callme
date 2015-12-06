@@ -43,15 +43,17 @@ $name = 'i4j5-'
       background-color #fff
       cursor pointer
       border-radius 50%
-      animation i4j5-callme__icon 5s both ease-in-out infinite
     
     &__phone
-      position: relative;
+      position relative
       top 50%
       left 50%
       fill #77b3d4
       margin-top -15px
       margin-left -15px
+      width 30px
+      height 30px
+      animation i4j5-callme__phone 5s both ease-in-out infinite
       
     
     &:before, &:after
@@ -160,25 +162,37 @@ $name = 'i4j5-'
         opacity 1
 
 
-@keyframes {$name}callme__icon
+@keyframes {$name}callme__phone
   0%
     transform rotate(0deg)
   5%
     transform rotate(60deg)
   10%
     transform rotate(30deg)
-    background-size 40px
+    width 40px
+    height 40px
+    margin-top -20px
+    margin-left -20px
   15%
     transform rotate(50deg)
-    background-size 40px
+    width 40px
+    height 40px
+    margin-top -20px
+    margin-left -20px
   20%
     transform rotate(30deg)
-    background-size 40px
+    width 40px
+    height 40px
+    margin-top -20px
+    margin-left -20px
   25%
     transform rotate(50deg)
   32%
     transform rotate(0deg)
-    background-size 30px
+    width 30px
+    height 30px
+    margin-top -15px
+    margin-left -15px
   100%
     transform rotate(0deg)
 
