@@ -129,34 +129,45 @@ $name = 'i4j5-'
       box-sizing border-box
       width 300px 
       height 100px
-      background-color #f5f5f5
+      background-color #FBFBFB
       position relative
       display block
       top -125px
-      left -335px
-      border-radius 2px
+      left -330px
+      border-radius 4px 4px 0px 4px 
+      border 1px solid #EFEFEF
+      box-shadow inset 0px 1px 1px rgba(0, 0, 0, .03)
       opacity 0
       transition all .4s linear
       padding 10px
       font-size 14px
       text-align center
       font-family arial
-      z-index 11000
-      
+      z-index 11000      
      
       &:after
+      &:before
         content ''
-        width 20px
-        height 20px
+        width 0px
+        height 0px
         position absolute
         display block
-        bottom 0px
-        right -20px
-        border-width 0px 20px 20px 0px
+      &:before
+        bottom -1px
+        right -16px
+        border-width 0px 15px 15px 0px
         border-style solid
         border-color rgba(0,0,0,0)
-        border-bottom-color #f5f5f5
-        z-index -1
+        border-bottom-color #EFEFEF
+        z-index 1
+      &:after
+        bottom: 0px;
+        right: -13px;
+        border-width 0px 13px 13px 0px
+        border-style solid
+        border-color rgba(0,0,0,0)
+        border-bottom-color #FBFBFB
+        z-index 2
         
       &_active
         opacity 1
