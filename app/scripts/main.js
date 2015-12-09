@@ -23,6 +23,7 @@
 
       $('body').on('click', '.i4j5-callme__icon', function() {
 
+        $('.i4j5-callme').addClass('i4j5-callme_active');
         $('.i4j5-callme__modal').addClass('i4j5-callme__modal_active');
 
         $('.i4j5-callme-bg').addClass('i4j5-callme-bg_active');
@@ -36,6 +37,7 @@
 
         if ( modal.hasClass('i4j5-callme__modal_active') ) {
           modal.removeClass('i4j5-callme__modal_active');  
+          $('.i4j5-callme').removeClass('i4j5-callme_active');  
         }
 
         $(this).removeClass('i4j5-callme-bg_active');

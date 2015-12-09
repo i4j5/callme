@@ -17,7 +17,12 @@ $name = 'i4j5-'
     width 56px
     height 56px
     box-shadow 0 0 15px rgba(0, 0, 0, .3)
-    transform-style preserve-3d;
+    transform-style preserve-3d
+    transition all .5s cubic-bezier(0.86, -0.2, 0.03, 1.18)
+    
+    &_active
+      right 50%
+      bottom 40%
     
     &-bg
       position fixed
@@ -132,13 +137,13 @@ $name = 'i4j5-'
       background-color #FBFBFB
       position relative
       display block
-      top -125px
-      left -320px
-      border-radius 4px 4px 0px 4px 
+      top -190px
+      left -112px
+      border-radius 4px 
       border 1px solid #EFEFEF
       box-shadow inset 0px 1px 1px rgba(0, 0, 0, .03)
       opacity 0
-      transition all .4s linear
+      transition all .6s linear
       padding 5px
       font-size 14px
       text-align center
@@ -153,20 +158,16 @@ $name = 'i4j5-'
         position absolute
         display block
       &:before
-        bottom -1px
-        right -16px
-        border-width 0px 15px 15px 0px
-        border-style solid
-        border-color rgba(0,0,0,0)
-        border-bottom-color #EFEFEF
+        bottom -31px
+        right 125px
+        border 15px solid transparent  
+        border-top 15px solid #EFEFEF
         z-index 1
       &:after
-        bottom: 0px;
-        right: -13px;
-        border-width 0px 13px 13px 0px
-        border-style solid
-        border-color rgba(0,0,0,0)
-        border-bottom-color #FBFBFB
+        bottom: -30px;
+        right: 125px;
+        border 15px solid transparent  
+        border-top 15px solid #FBFBFB
         z-index 2
         
       &_active
