@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    borschik = require('gulp-borschik'),
     stylus = require('gulp-stylus')
 		rename = require('gulp-rename'),
 		autoprefixer = require('gulp-autoprefixer'),
@@ -62,6 +63,7 @@ gulp.task('js', function() {
 			'bower_components/load/load.js',
 			'app/scripts/main.js'
 		])
+		.pipe(borschik({tech: "js"}))
 		.pipe(concat('_.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('.tmp'));;
